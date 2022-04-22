@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'OktaNeue';
+	src: local('OktaNeue regular'),
+	local('oktaneue-regular'),
+	url('../fonts/oktaneue-regular.woff2') format('woff2'),
+	url('../fonts/oktaneue-regular.woff') format('woff');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'OktaNeue';
+	src: local('OktaNeue semibold'),
+	local('oktaneue-bold'),
+	url('../fonts/oktaneue-bold.woff') format('woff2'),
+	url('../fonts/oktaneue-bold.woff') format('woff');
+	font-weight: 600;
+}
