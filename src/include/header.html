@@ -1,9 +1,22 @@
 <header class="header">
-	<div class="container-lg">
+	<div class="container container--lg">
 		<div class="logo">
 			<a class="logo__link" href="index.html">
-				<img src="img/logo.svg" alt="logo" width="226" height="61">
+				<img src="img/general/logo.svg" alt="logo" width="180" height="52">
 			</a>
 		</div>
+		<!-- nav -->
+		<nav class="menu" aria-label="primary navigation">
+			<ul>
+				<li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+				<li class="menu__item"><a class="menu__link" href="services.html">Services</a></li>
+				<li class="menu__item"><a class="menu__link" href="about.html">About Us</a></li>
+				<li class="menu__item"><a class="menu__link" href="contacts.html">Contatcs</a></li>
+			</ul>
+		</nav>
+		<button type="button" class="btn btn--menu">
+			<svg class="icon icon--menu" viewBox="0 0 32 32"><use xlink:href="#i-menu"/></svg>
+			<svg class="icon icon--close" viewBox="0 0 32 32"><use xlink:href="#i-close"/></svg>
+		</button>
 	</div>
 </header>

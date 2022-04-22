@@ -2,18 +2,21 @@
 $default-font: 'OktaNeue',arial, sans-serif;
 
 //text
-$text:#193F3F;
+$text:#0D1E49;
 // $base-text: rgba(#2C374D,0.7);
-$muted-text: #6B7382;
+// $muted-text: #6B7382;
 
 // bg
 $white: #fff;
-$bg: #F5F6FA;
-$bg-dark: #688595;
+// $bg: #F5F6FA;
+$bg-muted: #F4F8FB;
 // $border: #f5f5fb;
 
 //accents
-$accent: #70C1A0;
+$orange: #FA5D32;
+$green: #62B954;
+$blue: #2685C4;
+
 
 //px -> em
 @use "sass:math";

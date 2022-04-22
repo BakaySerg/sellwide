@@ -4,15 +4,13 @@
 @import "base/helpers";
 @import "base/general";
 
-
-
+// layout
+@import "layout/header";
+@import "layout/intro";
+@import "layout/footer";
 
 //components
 // @import "components/buttons";
-// layout
-@import "layout/header";
-@import "layout/footer";
 
 //modules
-// @import "modules/intro";
 
