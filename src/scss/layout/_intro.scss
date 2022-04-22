@@ -1,0 +1,24 @@
+.s-intro {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		background-image: var(--bg1x);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: 1;
+		@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), (min-resolution: 192dpi) and (min-width: 1024px),(min-width: 2000px) {
+			background-image: var(--bg2x);
+		}
+	}
+	&--main {
+		min-height: 100vmin;
+		&:before {
+			width: 70%;
+			height: 97%;
+			right: 1%;
+			top: 0;
+		}
+	}
+}
