@@ -5,7 +5,7 @@
 		padding-bottom: 3em;
 		display: grid;
 		grid-auto-flow: column;
-		grid-template-columns: 180px 1fr 1fr .77fr;
+		grid-template-columns: 184px 1fr 1fr .77fr;
 		gap: 3.6em;
 	}
 	&__nav {
@@ -26,6 +26,56 @@
 			&:hover {
 				color: $blue;
 			}
+		}
+	}
+	&__bottom {
+		@media (min-width: 700px){
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-top: 2em;
+			padding-bottom: 3em;
+		}
+	}
+	&__copy {
+		@media (min-width: 700px){
+			order: -1;
+			margin-right: auto;
+		}
+		@media (max-width: 699px){
+			width: 100%;
+			text-align: center;
+			padding-top: 1.6em;
+			padding-bottom: 1.8em;
+		}
+	}
+}
+.soc {
+	display: flex;
+	align-items: center;
+	gap: 1.1em;
+	position: relative;
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 48px;
+		height: 48px;
+		color: inherit;
+		border-radius: 50%;
+		border: 1px solid $border-light;
+		.icon {
+			color: inherit;
+			width: 19px;
+			height: 19px;
+		}
+		&:hover {
+			color: $yellow;
+			border-color: $yellow;
+		}
+		@media (max-width: 1024px){
+			width: 36px;
+			height: 36px;
 		}
 	}
 }
