@@ -18,6 +18,33 @@
 	&>* {
 		pointer-events: none;
 	}
+	&--blue {
+		background-color: $blue;
+		color: $white;
+		.icon {
+			transition: .3s;
+			margin-right: -.7em;
+		}
+		&:hover {
+			background-color: $blue-hover;
+			.icon {
+				transform: translateX(4px);
+			}
+		}
+	}
+	&--arr {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.88em;
+		gap: 0.5em;
+		min-width: 190px;
+		height: 60px;
+		@media (max-width: 1100px){
+			height: 50px;
+			min-width: 180px;
+		}
+	}
 	&--lg {
 		min-width: 230px;
 		padding: .88em;

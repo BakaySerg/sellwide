@@ -1,0 +1,19 @@
+.overtitle {
+	font-size: em(15);
+	padding: .18em .9em;
+	display: block;
+	width: fit-content;
+	margin-bottom: 3em;
+	font-style: normal;
+	background-color: $bg-muted;
+	color: $orange;
+	@media (max-width: 1367px){
+		margin-bottom: 2em;
+	}
+}
+.h1 {
+	font-size: em(60);
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 1em;
+}

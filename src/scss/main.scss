@@ -3,6 +3,7 @@
 @import "base/fonts";
 @import "base/helpers";
 @import "base/general";
+@import "base/typography";
 
 // layout
 @import "layout/header";
@@ -10,6 +11,7 @@
 @import "layout/footer";
 
 //components
+@import "components/icons";
 @import "components/buttons";
 
 //modules

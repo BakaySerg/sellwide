@@ -13,12 +13,31 @@
 		}
 	}
 	&--main {
-		min-height: 100vmin;
+		min-height: 90vmin;
+		padding-top: 4em;
+		padding-bottom: 4em;
+		@media (max-width: 1440px){
+			padding-top: 3em;
+			padding-bottom: 3em;
+		}
 		&:before {
 			width: 70%;
 			height: 97%;
 			right: 1%;
 			top: 0;
+		}
+	}
+}
+.intro {
+	&__container {
+		z-index: 1;
+		&--main {
+			.h1 {
+				max-width: 800px;
+				@media (max-width: 1367px){
+					max-width: 760px;
+				}
+			}
 		}
 	}
 }
