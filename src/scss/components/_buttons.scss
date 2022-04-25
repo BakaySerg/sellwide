@@ -44,6 +44,10 @@
 			height: 50px;
 			min-width: 180px;
 		}
+		@media (max-width: 400px){
+			height: 46px;
+			min-width: 170px;
+		}
 	}
 	&--lg {
 		min-width: 230px;

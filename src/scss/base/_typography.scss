@@ -16,4 +16,13 @@
 	font-weight: 600;
 	line-height: 1.2;
 	margin-bottom: 1em;
+	@media (max-width: 1100px){
+		font-size: em(56);
+	}
+	@media (max-width: 991px){
+		font-size: em(44);
+	}
+	@media (max-width: 700px){
+		font-size: em(38);
+	}
 }
