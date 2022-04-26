@@ -3,6 +3,7 @@
 	color: currentColor;
 	border: none;
 	font-size: 1em;
+	font-weight: 400;
 	text-align: center;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -15,6 +16,7 @@
 	user-select: none;
 	font-family: inherit;
 	flex-shrink: 0;
+	align-items: center;
 	&>* {
 		pointer-events: none;
 	}
@@ -34,12 +36,17 @@
 	}
 	&--arr {
 		display: inline-flex;
-		align-items: center;
 		justify-content: center;
 		padding: 0.88em;
 		gap: 0.5em;
 		min-width: 190px;
 		height: 60px;
+		@media (min-width: 1024px){
+			.icon {
+				position: relative;
+				top: 2px;
+			}
+		}
 		@media (max-width: 1100px){
 			height: 50px;
 			min-width: 180px;
@@ -55,7 +62,6 @@
 	}
 	&--icon {
 		display: inline-flex;
-		align-items: center;
 		justify-content: center;
 		gap: 1.4em;
 		& > .icon {
@@ -68,6 +74,26 @@
 		&:hover {
 			.icon {
 				transform: translateX(3px);
+			}
+		}
+	}
+}
+.link {
+	color: $orange;
+	&--icon {
+		display: inline-flex;
+		gap: .2em;
+		padding: .3em .6em .3em 0;
+		.icon {
+			transition: .3s;
+			@media (min-width: 1024px) {
+				position: relative;
+				top: 2px;
+			}
+		}
+		&:hover {
+			.icon {
+				transform: translateX(4px);
 			}
 		}
 	}

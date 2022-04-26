@@ -130,7 +130,7 @@
 		align-items: center;
 		@media (max-width: 699px) {
 			justify-content: center;
-			padding-top: 0.5em;
+			padding-top: .8em;
 		}
 		a {
 			display: block;
@@ -147,7 +147,7 @@
 .soc {
 	display: flex;
 	align-items: center;
-	gap: .6em;
+	gap: .7em;
 	position: relative;
 	@media (min-width: 1024px){
 		padding-left: .7em;
@@ -155,6 +155,7 @@
 	@media (max-width: 699px){
 		justify-content: center;
 		padding-top: 1.1em;
+		gap: 1em;
 	}
 	a {
 		display: flex;

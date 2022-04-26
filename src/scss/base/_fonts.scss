@@ -1,5 +1,13 @@
 @font-face {
 	font-family: 'OktaNeue';
+	src: local('OktaNeue normal'),
+	local('oktaneue-normal'),
+	url('../fonts/oktaneue-normal.woff2') format('woff2'),
+	url('../fonts/oktaneue-normal.woff') format('woff');
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'OktaNeue';
 	src: local('OktaNeue regular'),
 	local('oktaneue-regular'),
 	url('../fonts/oktaneue-regular.woff2') format('woff2'),

@@ -1,9 +1,8 @@
 .s--simply {
-	padding-top: 3em;
+	padding-top: 4em;
 	padding-bottom: 5.4em;
 	@media (max-width: 1100px){
-		padding-top: 4.6em;
-		padding-bottom: 4em;
+		padding-bottom: 3.8em;
 	}
 	@media (max-width: 991px){
 		padding-top: 4em;
@@ -13,7 +12,22 @@
 		padding-top: 3em;
 		padding-bottom: 2.2em;
 	}
-	@media (max-width: 400px){
+	@media (max-width: 500px){
 		padding-top: 2.6em;
 	}
+}
+.ben {
+	&__grid {
+		@media (min-width: 600px){
+			padding-top: 1em;
+		}
+	}
+	&__icon {
+		display: block;
+		width: fit-content;
+		margin-bottom: 1.1em;
+	}
+}
+.s--muted {
+	background-color: $bg-muted;
 }

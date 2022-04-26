@@ -13,13 +13,13 @@
 		}
 	}
 	&--main {
-		min-height: 83vmin;
+		min-height: 86vmin;
 		padding-top: 4em;
 		&:before {
 			width: 69.7%;
 			padding-bottom: 42.2%;
 			right: 1%;
-			top: 0;
+			bottom: 0;
 		}
 		@media (max-width: 1440px){
 			padding-top: 3em;
