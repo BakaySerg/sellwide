@@ -1,6 +1,7 @@
 .header {
 	position: relative;
 	z-index: 11;
+	max-width: 100%;
 	@media (max-width: 991px){
 		margin-bottom: -10px;
 	}

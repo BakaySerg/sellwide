@@ -1,14 +1,76 @@
 .footer {
 	background-color: $bg-muted;
+	overflow: hidden;
+	@media (min-width: 1024px){
+		padding-top: 4em;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 3.6em;
+			background: url(../img/general/footer-textur.svg) 1% center repeat-x;
+			background-size: contain;
+		}
+	}
+	@media (max-width: 1367px){
+		&::before {
+			height: 3.4em;
+		}
+	}
 	&__top {
 		padding-top: 5em;
-		padding-bottom: 3em;
+		padding-bottom: 2.5em;
 		display: grid;
 		grid-auto-flow: column;
-		grid-template-columns: 184px 1fr 1fr .77fr;
-		gap: 3.6em;
+		grid-template-columns: 190px 1fr 1fr .9fr .52fr;
+		gap: 3.4em;
+		@media (max-width: 1300px){
+			grid-template-columns: 170px 1fr 1fr 1fr .76fr;
+			gap: 2.6em;
+		}
+		@media (max-width: 1023px){
+			padding-top: 3em;
+			padding-bottom: 2em;
+			padding-left: 30px;
+		}
+		@media (max-width: 991px){
+			grid-template-columns: repeat(auto-fill, minmax(228px, 1fr));
+			grid-auto-flow: dense;
+			gap: 40px 28px;
+		}
+		@media (max-width: 699px){
+			padding-left: 15px;
+			grid-template-columns: repeat(auto-fill, minmax(152px, 1fr));
+			gap: 28px 22px;
+			padding-top: 2.2em;
+			padding-bottom: 1.8em;
+		}
+	}
+	&__logo {
+		@media (min-width: 1024px){
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 41%;
+				right: 0;
+				width: 150%;
+				padding-bottom: 78%;
+				background-image: url(../img/general/bg-lines-2.svg);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+			}
+		}
+		@media (max-width: 991px) {
+			display: none;
+		}
 	}
 	&__nav {
+		min-width: 20%;
 		.h5 {
 			margin-bottom: 1.3em;
 		}
@@ -24,54 +86,90 @@
 				margin-bottom: .4em;
 			}
 			&:hover {
-				color: $blue;
+				color: $orange;
 			}
 		}
 	}
 	&__bottom {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 15px;
+			right: 15px;
+			border-top: 1px solid $border;
+		}
 		@media (min-width: 700px){
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			padding-top: 2em;
-			padding-bottom: 3em;
+			padding-top: 1.8em;
+			padding-bottom: 2.2em;
+		}
+		@media (max-width: 699px){
+			padding-top: 0.2em;
+			padding-bottom: 0.2em;
 		}
 	}
 	&__copy {
+		font-size: em(16);
 		@media (min-width: 700px){
 			order: -1;
-			margin-right: auto;
 		}
 		@media (max-width: 699px){
 			width: 100%;
 			text-align: center;
-			padding-top: 1.6em;
+			padding-top: 1.1em;
 			padding-bottom: 1.8em;
+		}
+	}
+	&__b-nav {
+		display: flex;
+		gap: 1.1em;
+		align-items: center;
+		@media (max-width: 699px) {
+			justify-content: center;
+			padding-top: 0.5em;
+		}
+		a {
+			display: block;
+			width: fit-content;
+			color: inherit;
+			font-size: em(16);
+			padding: .3em 0;
+			&:hover {
+				color: $orange;
+			}
 		}
 	}
 }
 .soc {
 	display: flex;
 	align-items: center;
-	gap: 1.1em;
+	gap: .6em;
 	position: relative;
+	@media (min-width: 1024px){
+		padding-left: .7em;
+	}
+	@media (max-width: 699px){
+		justify-content: center;
+		padding-top: 1.1em;
+	}
 	a {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 48px;
-		height: 48px;
+		width: 42px;
+		height: 42px;
 		color: inherit;
-		border-radius: 50%;
-		border: 1px solid $border-light;
 		.icon {
 			color: inherit;
-			width: 19px;
-			height: 19px;
+			width: 22px;
+			height: 22px;
 		}
 		&:hover {
-			color: $yellow;
-			border-color: $yellow;
+			color: $blue;
 		}
 		@media (max-width: 1024px){
 			width: 36px;

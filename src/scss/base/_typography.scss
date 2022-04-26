@@ -26,3 +26,25 @@
 		font-size: em(38);
 	}
 }
+.h2 {
+	font-size: em(50);
+	font-weight: 600;
+	text-align: center;
+	line-height: 1.4;
+	margin: 0 auto 1.4em;
+	&--sm {
+		max-width: 610px;
+	}
+	&--md {
+		max-width: 690px;
+	}
+	@media (max-width: 1100px){
+		font-size: em(44);
+	}
+	@media (max-width: 991px){
+		font-size: em(40);
+	}
+	@media (max-width: 700px){
+		font-size: em(30);
+	}
+}

@@ -13,9 +13,8 @@
 		}
 	}
 	&--main {
-		min-height: 90vmin;
+		min-height: 83vmin;
 		padding-top: 4em;
-		padding-bottom: 4em;
 		&:before {
 			width: 69.7%;
 			padding-bottom: 42.2%;
@@ -47,6 +46,7 @@
 	}
 }
 .intro {
+	overflow: hidden;
 	&__container {
 		z-index: 1;
 		&--main {
