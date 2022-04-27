@@ -55,7 +55,7 @@
 		const btnScrollDown = document.getElementById("btn-scroll-down");
 		btnScrollDown?.addEventListener('click', function(e) {
 			e.preventDefault();
-			const parent = btnScrollDown.closest(".intro");
+			const parent = btnScrollDown.closest(".s-intro");
 			const target = parent.nextElementSibling;
 			target.scrollIntoView({ behavior: "smooth", block: "start" });
 		});
