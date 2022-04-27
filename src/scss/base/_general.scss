@@ -4,13 +4,14 @@ body {
 	font-family: $default-font;
 	font-size: 18px;
 	font-weight: 300;
-	line-height: 1.5;
+	line-height: 1.77;
 	background: transparent;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	min-height: 100vh;
 	@media (max-width: 1370px) {
 		font-size: 16px;
+		line-height: 1.6;
 	}
 	@media (max-width: 767px) {
 		font-size: 15px;
@@ -36,6 +37,9 @@ body {
 	max-width: 1310px;
 	&--lg {
 		max-width: 1340px;
+	}
+	@media (max-width: 1300px){
+		max-width: 1240px;
 	}
 	@media (max-width: 359px) {
 		padding-left: 14px;
