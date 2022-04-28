@@ -84,7 +84,41 @@
 		<!--  -->
 		<section class="s--simply">
 			<div class="container">
-				<h2 class="h2 h2--md"></h2>
+				<h2 class="h2"></h2>
+				<form action="#" class="form">
+					<div class="form__dual">
+						<input type="text" name="f-name" class="form__input" placeholder="First Name *" minlength="2" required>
+						<input type="text" name="l-name" class="form__input" placeholder="Last Name *" minlength="2" required>
+					</div>
+					<div class="form__dual">
+						<input type="text" name="company" class="form__input" placeholder="Company Name*" minlength="2" required>
+						<input type="text" name="site" class="form__input" placeholder="site.com" minlength="5">
+					</div>
+					<div class="form__dual">
+						<select class="form__select" name="plan">
+							<option value="not specified...">Choose . . .</option>
+							<option value="optimal">optimal</option>
+							<option value="busines">busines</option>
+							<option value="pro">pro</option>
+						</select>
+						<input type="email" name="email" class="form__input" placeholder="Your Email *" minlength="2" required>
+					</div>
+					<textarea class="textarea" name="comment" cols="30" rows="10" placeholder="Your Message" required></textarea>
+					<div class="form__cta pt-1">
+						<div class="captcha"><img src="img/contacts/captcha.jpg" alt="captcha"></div>
+						<button type="submit" class="btn btn--arr btn--blue">
+							Submit
+							<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-sm"/></svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<!--  -->
+		<section class="s--simply">
+			<div class="container">
+				<h2 class="h2"></h2>
 			</div>
 		</section>
 
