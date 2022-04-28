@@ -84,26 +84,47 @@
 		<!--  -->
 		<section class="s--simply">
 			<div class="container">
-				<h2 class="h2"></h2>
+				<h2 class="h2">Get in Touch Sell Wide</h2>
 				<form action="#" class="form">
 					<div class="form__dual">
-						<input type="text" name="f-name" class="form__input" placeholder="First Name *" minlength="2" required>
-						<input type="text" name="l-name" class="form__input" placeholder="Last Name *" minlength="2" required>
+						<div class="form__wrap">
+							<div class="form__placeholder">First Name *</div>
+							<input type="text" name="f-name" class="form__input" placeholder="John" minlength="2" required>
+						</div>
+						<div class="form__wrap">
+							<div class="form__placeholder">Last Name *</div>
+							<input type="text" name="l-name" class="form__input" placeholder="Doe" minlength="2" required>
+						</div>
 					</div>
 					<div class="form__dual">
-						<input type="text" name="company" class="form__input" placeholder="Company Name*" minlength="2" required>
-						<input type="text" name="site" class="form__input" placeholder="site.com" minlength="5">
+						<div class="form__wrap">
+							<div class="form__placeholder">Company Name*</div>
+							<input type="text" name="company" class="form__input" placeholder="Company" minlength="2" required>
+						</div>
+						<div class="form__wrap">
+							<div class="form__placeholder">Website that you want SEO for *</div>
+							<input type="text" name="site" class="form__input" placeholder="site.com" minlength="5">
+						</div>
 					</div>
 					<div class="form__dual">
-						<select class="form__select" name="plan">
-							<option value="not specified...">Choose . . .</option>
-							<option value="optimal">optimal</option>
-							<option value="busines">busines</option>
-							<option value="pro">pro</option>
-						</select>
-						<input type="email" name="email" class="form__input" placeholder="Your Email *" minlength="2" required>
+						<div class="form__wrap">
+							<div class="form__placeholder">Seo Plan *</div>
+							<select class="form__select" name="plan">
+								<option value="0" style="display: none;">Choose . . .</option>
+								<option value="optimal">optimal</option>
+								<option value="busines">busines</option>
+								<option value="pro">pro</option>
+							</select>
+						</div>
+						<div class="form__wrap">
+							<div class="form__placeholder">Email *</div>
+							<input type="email" name="email" class="form__input" placeholder="john-doe@mail.com" minlength="2" required>
+						</div>
 					</div>
-					<textarea class="textarea" name="comment" cols="30" rows="10" placeholder="Your Message" required></textarea>
+					<div class="form__wrap">
+						<div class="form__placeholder">Comment or Message</div>
+						<textarea class="textarea" name="comment" cols="30" rows="10" placeholder="Your comment" required></textarea>
+					</div>
 					<div class="form__cta pt-1">
 						<div class="captcha"><img src="img/contacts/captcha.jpg" alt="captcha"></div>
 						<button type="submit" class="btn btn--arr btn--blue">
@@ -116,9 +137,60 @@
 		</section>
 
 		<!--  -->
-		<section class="s--simply">
+		<section class="s--simply s-decor-buildings s-decor-buildings--4">
 			<div class="container">
-				<h2 class="h2"></h2>
+				<h2 class="h2">Our Contacts</h2>
+				<div class="contact__row">
+					<div class="contact__item">
+						<div class="contact__icon">
+							<svg class="icon icon--md" viewBox="0 0 32 32"><use xlink:href="img/contacts/sprite.svg#i-location"/></svg>
+						</div>
+						<div>
+							address
+							<address class="contact__gist">
+								112 Avenue,<br>
+								660002, <br>
+								New York
+							</address>
+						</div>
+					</div>
+					<div class="contact__item">
+						<div class="contact__icon">
+							<svg class="icon icon--md" viewBox="0 0 32 32"><use xlink:href="img/contacts/sprite.svg#i-clock"/></svg>
+						</div>
+						<div>
+							working hours
+							<div class="contact__gist">
+								Mon - Fri 9am - 9 pm <br>
+								Sun - Sut 10am - 10pm
+							</div>
+						</div>
+					</div>
+					<div class="contact__item">
+						<div class="contact__icon">
+							<svg class="icon icon--md" viewBox="0 0 32 32"><use xlink:href="img/contacts/sprite.svg#i-phone"/></svg>
+						</div>
+						<div>
+							phone
+							<div class="contact__gist">
+								<a href="tel:1100330007">+7 700 330 007 00</a>
+								<a href="tel:1100330007">+7 700 330 007 00</a>
+							</div>
+						</div>
+					</div>
+					<div class="contact__item">
+						<div class="contact__icon">
+							<svg class="icon icon--md" viewBox="0 0 32 32"><use xlink:href="img/contacts/sprite.svg#i-support"/></svg>
+						</div>
+						<div>
+							working hours
+							<div class="contact__gist">
+								Mon - Fri 9am - 9 pm <br>
+								Sun - Sut 10am - 10pm
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -168,7 +240,7 @@
 				<h4 class="h5">About Company</h4>
 				<nav>
 					<a href="about.html">About Us</a>
-					<a href="contatcs.html">Contatcs</a>
+					<a href="contacts.html">Contatcs</a>
 				</nav>
 			</div>
 		</div>
