@@ -16,6 +16,7 @@
 		padding-top: 4em;
 		padding-bottom: 4em;
 		z-index: 2;
+		overflow: visible;
 		@media (max-width: 991px){
 			padding-bottom: 2em;
 			margin-bottom: -5em;
@@ -129,5 +130,22 @@
 				top: 102%;
 			}
 		}
+	}
+}
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+	width: fit-content;
+	margin: 0 auto 2em;
+	.h1 {
+		margin-bottom: .2em;
+	}
+	& ~ p {
+		max-width: 850px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1.6em;
 	}
 }

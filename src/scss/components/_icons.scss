@@ -4,13 +4,22 @@
 	height: 24px;
 	flex-shrink: 0;
 	vertical-align: middle;
-	&--md {
+	&--sm {
 		display: block;
 		width: 40px;
 		height: 40px;
 		@media (max-width: 719px) {
 			width: 34px;
 			height: 34px;
+		}
+	}
+	&--md {
+		display: block;
+		width: 62px;
+		height: 62px;
+		@media (max-width: 719px) {
+			width: 40px;
+			height: 40px;
 		}
 	}
 	&--lg {
