@@ -1,3 +1,6 @@
+.s--ov-visible {
+	overflow: visible;
+}
 .s--simply {
 	padding-top: 4em;
 	padding-bottom: 5.4em;
@@ -31,7 +34,7 @@
 .why__list {
 	position: relative;
 	list-style: none;
-	li {
+	&-item {
 		padding-bottom: 1.5em;
 		padding-left: 2.1em;
 		position: relative;
@@ -51,7 +54,7 @@
 		padding-top: 3em;
 		columns: 2;
 		column-gap: calc(27em + 6vw);
-		li {
+		&-item {
 			break-inside: avoid;
 			padding-bottom: 2.8em;
 		}
@@ -80,7 +83,7 @@
 		&:before {
 			width: calc(20em + 5vw);
 		}
-		li {
+		&-item {
 			padding-left: 1.8em;
 			&:before {
 				width: 1.8em;
@@ -101,6 +104,18 @@
 			width: 1.6em;
 			height: 1.6em;
 		}
+	}
+}
+.why__grid {
+	list-style: none;
+	li {
+		padding-bottom: 0.5em;
+		@media (max-width: 719px){
+			padding-bottom: 0;
+		}
+	}
+	@media (min-width: 1200px){
+		padding-top: 1em;
 	}
 }
 .art {
@@ -135,6 +150,49 @@
 		}
 		@media (min-width: 1440px){
 			max-width: 700px;
+		}
+	}
+}
+.ask {
+	&__row {
+		@media (min-width: 992px){
+			display: flex;
+			gap: 3em;
+			justify-content: space-between;
+		}
+	}
+	&__self {
+		position: relative;
+		align-self: flex-start;
+		@media (min-width: 992px){
+			&::before {
+				content: '';
+				position: absolute;
+				width: 80%;
+				padding-bottom: 49%;
+				background: url(../img/services/enterprise-seo/shapes.png) center no-repeat;
+				background-size: contain;
+				top: 60%;
+				left: 26%;
+			}
+		}
+		@media (min-width: 992px) {
+			max-width: 510px;
+		}
+	}
+	&__answer {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			left: -40px;
+			top: 10px;
+			width: 0.62em;
+			height: 0.62em;
+			background-color: $orange;
+		}
+		@media (min-width: 992px) {
+			max-width: 600px;
 		}
 	}
 }

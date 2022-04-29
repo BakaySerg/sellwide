@@ -19,7 +19,7 @@
 		overflow: visible;
 		@media (max-width: 991px){
 			padding-bottom: 2em;
-			margin-bottom: -5em;
+			margin-bottom: -3em;
 		}
 		&:before {
 			background-image: var(--bg);
@@ -41,7 +41,7 @@
 			}
 			@media (max-width: 600px){
 				width: 140%;
-				left: -30%;
+				left: -22%;
 				transform: none;
 				top: auto;
 				bottom: 0;

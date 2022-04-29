@@ -16,6 +16,9 @@
 			@media (max-width: 767px){
 				grid-template-columns: repeat(auto-fill, minmax(204px, 1fr));
 			}
+			@media (max-width: 719px){
+				gap: 26px 14px;
+			}
 		}
 	}
 }

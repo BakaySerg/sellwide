@@ -1,0 +1,27 @@
+.card {
+	overflow: hidden;
+	background-color: $bg-muted-2;
+	padding: 1.8em;
+	&--accent {
+		background-color: $bg-muted;
+	}
+	&__row {
+		@media (min-width: 1024px){
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			gap: 2em;
+		}
+	}
+	&__title {
+		position: relative;
+		padding-bottom: 1.8em;
+		.h4 {
+			margin-bottom: .2em;
+		}
+	}
+	&__price {
+		b {
+			font-size: 1.4em;
+		}
+	}
+}

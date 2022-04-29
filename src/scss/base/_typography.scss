@@ -38,6 +38,9 @@
 	&--md {
 		max-width: 690px;
 	}
+	&--lg {
+		max-width: 950px;
+	}
 	@media (max-width: 1100px){
 		font-size: em(44);
 	}
@@ -47,6 +50,21 @@
 	}
 	@media (max-width: 721px){
 		font-size: em(30);
+		margin-bottom: .8em;
+	}
+}
+.h2_5 {
+	display: block;
+	font-weight: 300;
+	font-size: em(40);
+	padding-bottom: 1.2em;
+	line-height: 1.4;
+	@media (max-width: 991px){
+		font-size: em(36);
+		margin-bottom: 1.1em;
+	}
+	@media (max-width: 721px){
+		font-size: em(28);
 		margin-bottom: .8em;
 	}
 }
@@ -80,6 +98,7 @@
 	font-weight: 600;
 	font-size: em(24);
 	margin-bottom: 1em;
+	line-height: 1.25;
 	@media (max-width: 991px){
 		font-size: em(22);
 	}
