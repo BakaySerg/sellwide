@@ -39,6 +39,12 @@
 		bottom: 30%;
 		padding-bottom: 44%;
 	}
+	&--6::before {
+		background-image: url(../img/general/bg-6.svg);
+		bottom: auto;
+		padding-bottom: 29%;
+		top: -10em;
+	}
 	@media (max-width: 1100px){
 		&:before {
 			bottom: 85%;
@@ -46,10 +52,17 @@
 		&--3::before,&--4::before {
 			bottom: 0;
 		}
+		&--6::before{
+			top: -7em;
+			bottom: auto;
+		}
 	}
 	@media (max-width: 700px){
 		&--1::before,&--2::before {
 			bottom: 96%;
+		}
+		&--6::before {
+			top: -3em;
 		}
 	}
 }

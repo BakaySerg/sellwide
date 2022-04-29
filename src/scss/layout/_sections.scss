@@ -99,10 +99,18 @@
 		}
 	}
 	@media (max-width: 721px){
-		li:before {
+		&-item:before {
 			left: -5px;
 			width: 1.6em;
 			height: 1.6em;
+		}
+	}
+	@media (max-width: 721px){
+		&-item:before {
+			top: 0.1em;
+			left: -2px;
+			width: 1.4em;
+			height: 1.4em;
 		}
 	}
 }
