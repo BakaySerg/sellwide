@@ -182,14 +182,16 @@
 	}
 	&__answer {
 		position: relative;
-		&::before {
-			content: '';
-			position: absolute;
-			left: -40px;
-			top: 10px;
-			width: 0.62em;
-			height: 0.62em;
-			background-color: $orange;
+		@media (min-width: 1200px){
+			&::before {
+				content: '';
+				position: absolute;
+				left: -40px;
+				top: 10px;
+				width: 0.62em;
+				height: 0.62em;
+				background-color: $orange;
+			}
 		}
 		@media (min-width: 992px) {
 			max-width: 600px;
