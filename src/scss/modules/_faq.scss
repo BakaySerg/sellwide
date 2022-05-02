@@ -12,6 +12,12 @@
 	}
 	&__pict {
 		flex-shrink: 0.38;
+		@media (min-width: 1360px){
+			&--m-r {
+				position: relative;
+				left: 3em;
+			}
+		}
 		@media (max-width: 1023px){
 			display: none;
 		}
