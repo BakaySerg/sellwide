@@ -135,24 +135,24 @@
 	}
 	&__pict {
 		flex-grow: 0.1;
-		// @media (min-width: 720px){
-		// 	&--1 {
-		// 		position: relative;
-		// 		z-index: 1;
-		// 		left: -30px;
-		// 		&::before {
-		// 			content: '';
-		// 			position: absolute;
-		// 			width: 120%;
-		// 			height: 130%;
-		// 			top: -20%;
-		// 			left: -15%;
-		// 			background: url(../img/general/shapes.svg) center no-repeat;
-		// 			background-size: contain;
-		// 			z-index: -1;
-		// 		}
-		// 	}
-		// }
+		@media (min-width: 720px){
+			&--decor-1 {
+				position: relative;
+				z-index: 1;
+				top: 4em;
+				&::before {
+					content: '';
+					position: absolute;
+					width: 85%;
+					padding-bottom: 45%;
+					bottom: 89%;
+					left: 1%;
+					background: url(../img/general/shapes-1.svg) center no-repeat;
+					background-size: contain;
+					z-index: -1;
+				}
+			}
+		}
 		@media (min-width: 1440px){
 			flex-grow: 0;
 		}
@@ -183,6 +183,9 @@
 		}
 		@media (min-width: 1440px){
 			max-width: 700px;
+			&--lg{
+				max-width: 726px;
+			}
 		}
 	}
 }
@@ -241,6 +244,28 @@
 		}
 		@media (min-width: 992px) {
 			max-width: 600px;
+		}
+	}
+	&__list {
+		li {
+			padding-bottom: 1.2em;
+			padding-left: 2em;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				left: -5px;
+				top: .7em;
+				width: 0.5em;
+				height: 0.5em;
+				background-color: $orange;
+			}
+			@media (max-width: 991px){
+				&::before {
+					left: 1px;
+					top: 0.5em;
+				}
+			}
 		}
 	}
 }

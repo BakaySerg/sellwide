@@ -25,6 +25,9 @@
 	@media (max-width: 721px){
 		font-size: em(38);
 	}
+	@media (max-width: 500px){
+		font-size: em(36);
+	}
 }
 .h2 {
 	font-size: em(50);
@@ -55,9 +58,9 @@
 }
 .h2_5 {
 	display: block;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: em(40);
-	margin-bottom: 1.2em;
+	margin-bottom: .8em;
 	line-height: 1.4;
 	@media (max-width: 991px){
 		font-size: em(36);
@@ -65,7 +68,7 @@
 	}
 	@media (max-width: 721px){
 		font-size: em(28);
-		margin-bottom: .8em;
+		margin-bottom: .7em;
 	}
 }
 .h3 {
