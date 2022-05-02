@@ -6,6 +6,9 @@
 	&--accent {
 		background-color: $bg-muted;
 	}
+	@media (max-width: 1100px){
+		padding: 1.6em;
+	}
 	@media (max-width: 1023px){
 		margin-bottom: 1em;
 	}
@@ -91,6 +94,19 @@
 					&:nth-child(5n) {
 						margin-bottom: .6em;
 					}
+				}
+			}
+		}
+		&--table {
+			li {
+				display: flex;
+				align-items: center;
+				b {
+					display: inline-block;
+					padding-left: 0.4em;
+					margin-left: auto;
+					min-width: 9ch;
+					max-width: 9ch;
 				}
 			}
 		}

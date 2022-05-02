@@ -41,8 +41,14 @@
 	}
 	&--6::before {
 		background-image: url(../img/general/bg-6.svg);
-		bottom: auto;
 		padding-bottom: 29%;
+		bottom: auto;
+		top: -10em;
+	}
+	&--7::before {
+		background-image: url(../img/general/bg-7.svg);
+		padding-bottom: 34.8%;
+		bottom: auto;
 		top: -10em;
 	}
 	@media (max-width: 1100px){
@@ -52,7 +58,7 @@
 		&--3::before,&--4::before {
 			bottom: 0;
 		}
-		&--6::before{
+		&--6::before,&--7::before{
 			top: -7em;
 			bottom: auto;
 		}
