@@ -124,6 +124,7 @@
 	}
 	@media (min-width: 1200px){
 		padding-top: 1em;
+		gap: 38px 30px;
 	}
 }
 .art {
@@ -214,7 +215,7 @@
 				top: 60%;
 				left: 26%;
 			}
-			&--1::before {
+			&--1::before,&--11::before {
 				content: '';
 				position: absolute;
 				width: 60%;
@@ -223,6 +224,10 @@
 				background-size: contain;
 				top: 60%;
 				left: 46%;
+			}
+			&--11::before{
+				top: 84%;
+				background-image: url(../img/general/bg-lines.svg);
 			}
 		}
 		@media (min-width: 992px) {
@@ -255,6 +260,9 @@
 		}
 	}
 	&__list {
+		@media (min-width: 992px) {
+			max-width: 631px;
+		}
 		li {
 			padding-bottom: 1.2em;
 			padding-left: 2em;

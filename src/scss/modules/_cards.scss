@@ -1,7 +1,7 @@
 .card {
 	overflow: hidden;
 	background-color: $bg-muted-2;
-	padding: 1.8em;
+	padding: 1.8em 1.6em 1.8em 1.8em;
 	position: relative;
 	&--accent {
 		background-color: $bg-muted;
@@ -104,8 +104,8 @@
 		&--divided {
 			@media (min-width: 1024px){
 				li {
-					&:nth-child(5n):not(:last-child):not(:nth-last-child(2)) {
-						margin-bottom: .6em;
+					&:nth-child(5n):not(:last-child):not(:nth-last-child(-n+4)) {
+						margin-bottom: .8em;
 					}
 				}
 			}

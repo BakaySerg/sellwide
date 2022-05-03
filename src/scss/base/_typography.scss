@@ -132,7 +132,7 @@ p {
 		break-inside: avoid;
 	}
 }
-.letter-list {
+.letter-list ,.number-list{
 	list-style: none;
 	counter-reset: i;
 	margin-bottom: 1em;
@@ -145,5 +145,10 @@ p {
 			color: $orange;
 			margin-right: .8em;
 		}
+	}
+}
+.number-list {
+	li:before {
+		content: counter(i, decimal-leading-zero) " ’";
 	}
 }

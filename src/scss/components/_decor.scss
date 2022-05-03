@@ -57,6 +57,11 @@
 		bottom: auto;
 		top: -10em;
 	}
+	&--8::before {
+		background-image: url(../img/general/bg-8.svg);
+		bottom: 0%;
+		padding-bottom: 66%;
+	}
 	@media (max-width: 1100px){
 		&:before {
 			bottom: 85%;
