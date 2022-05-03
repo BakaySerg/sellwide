@@ -131,6 +131,9 @@
 		@media (min-width: 1000px){
 			display: flex;
 			gap: 1em;
+			&--v-center {
+				align-items: center;
+			}
 		}
 	}
 	&__pict {
@@ -246,6 +249,11 @@
 			max-width: 600px;
 		}
 	}
+	&__text {
+		@media (min-width: 992px) {
+			max-width: 631px;
+		}
+	}
 	&__list {
 		li {
 			padding-bottom: 1.2em;
@@ -254,7 +262,7 @@
 			&::before {
 				content: '';
 				position: absolute;
-				left: -5px;
+				left: 0;
 				top: .7em;
 				width: 0.5em;
 				height: 0.5em;

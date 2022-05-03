@@ -118,3 +118,32 @@ p {
 		font-size: 1.2em;
 	}
 }
+.columns-list {
+	@media (min-width: 540px){
+		columns: 2;
+		column-gap: 2.1em;
+	}
+	@media (min-width: 1024px){
+		&--three {
+			columns: 3;
+		}
+	}
+	li {
+		break-inside: avoid;
+	}
+}
+.letter-list {
+	list-style: none;
+	counter-reset: i;
+	margin-bottom: 1em;
+	li {
+		margin-bottom: .3em;
+		&:before {
+			content: counter(i, lower-latin) " ’";
+			counter-increment: i;
+			display: inline-block;
+			color: $orange;
+			margin-right: .8em;
+		}
+	}
+}

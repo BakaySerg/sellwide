@@ -104,7 +104,7 @@
 		&--divided {
 			@media (min-width: 1024px){
 				li {
-					&:nth-child(5n) {
+					&:nth-child(5n):not(:last-child):not(:nth-last-child(2)) {
 						margin-bottom: .6em;
 					}
 				}
