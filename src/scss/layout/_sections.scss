@@ -205,6 +205,13 @@
 		position: relative;
 		align-self: flex-start;
 		@media (min-width: 992px){
+			max-width: 510px;
+			&--1 {
+				max-width: 480px;
+			}
+			&--01 {
+				max-width: 460px;
+			}
 			&--0::before {
 				content: '';
 				position: absolute;
@@ -214,6 +221,16 @@
 				background-size: contain;
 				top: 60%;
 				left: 26%;
+			}
+			&--01::before {
+				content: '';
+				position: absolute;
+				width: 77%;
+				padding-bottom: 43%;
+				background: url(../img/general/shapes-01.png) center no-repeat;
+				background-size: contain;
+				top: 50%;
+				left: 36%;
 			}
 			&--1::before,&--11::before {
 				content: '';
@@ -230,10 +247,9 @@
 				background-image: url(../img/general/bg-lines.svg);
 			}
 		}
-		@media (min-width: 992px) {
-			max-width: 510px;
-			&--1 {
-				max-width: 480px;
+		@media (max-width: 1100px) {
+			&--01::before{
+				left: 26%;
 			}
 		}
 	}

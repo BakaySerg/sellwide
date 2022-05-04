@@ -35,17 +35,22 @@
 	text-align: center;
 	line-height: 1.4;
 	margin: 0 auto 1.3em;
-	&--sm {
-		max-width: 610px;
-	}
-	&--md {
-		max-width: 690px;
-	}
-	&--lg {
-		max-width: 950px;
+	@media (min-width: 1024px){
+		&--sm {
+			max-width: 610px;
+		}
+		&--md {
+			max-width: 690px;
+		}
+		&--lg {
+			max-width: 950px;
+		}
 	}
 	@media (max-width: 1100px){
 		font-size: em(44);
+		&--lg {
+			max-width: 770px;
+		}
 	}
 	@media (max-width: 991px){
 		font-size: em(40);
