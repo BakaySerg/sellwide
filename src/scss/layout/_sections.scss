@@ -232,7 +232,7 @@
 				top: 50%;
 				left: 36%;
 			}
-			&--1::before,&--11::before {
+			&--1::before,&--11::before,&--12::before {
 				content: '';
 				position: absolute;
 				width: 60%;
@@ -245,6 +245,13 @@
 			&--11::before{
 				top: 84%;
 				background-image: url(../img/general/bg-lines.svg);
+			}
+			&--12::before{
+				top: 102%;
+				width: 47%;
+				left: 65%;
+				padding-bottom: 18%;
+				background-image: url(../img/general/bg-lines-5.png);
 			}
 		}
 		@media (max-width: 1100px) {
