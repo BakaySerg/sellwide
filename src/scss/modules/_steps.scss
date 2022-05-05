@@ -17,11 +17,11 @@
 	&__grid {
 		@media (min-width: 768px){
 			display: grid;
-			gap: 20px 5em;
+			gap: 20px 5.2em;
 			grid-template-columns: repeat(2,1fr);
 		}
 		@media (max-width: 1024px){
-			gap: 20px 2em;
+			gap: 20px 2.2em;
 		}
 	}
 	&__pict {

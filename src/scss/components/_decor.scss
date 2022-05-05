@@ -103,6 +103,13 @@
 			right: 0;
 			background-image: url(../img/general/bg-lines-3.svg);
 		}
+		&--11::before {
+			bottom: 12%;
+			right: 14%;
+			width: 15em;
+			height: 7em;
+			background-image: url(../img/general/bg-lines-6.svg);
+		}
 		&--2::before {
 			bottom: 0;
 			right: 19%;
