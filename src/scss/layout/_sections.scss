@@ -178,6 +178,8 @@
 	&__text {
 		.h2 {
 			text-align: left;
+			margin-left: 0;
+			margin-right: 0;
 		}
 		@media (min-width: 1000px) {
 			max-width: 600px;
@@ -278,14 +280,17 @@
 		}
 	}
 	&__text {
+		flex-grow: 0.75;
 		@media (min-width: 992px) {
 			max-width: 631px;
 		}
 	}
-	&__list {
-		@media (min-width: 992px) {
+	@media (min-width: 992px){
+		&__self + &__list {
 			max-width: 631px;
 		}
+	}
+	&__list {
 		li {
 			padding-bottom: 1.2em;
 			padding-left: 2em;

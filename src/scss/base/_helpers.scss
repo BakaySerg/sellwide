@@ -28,7 +28,11 @@
 .pb-2 {
 	padding-bottom: 2em;
 }
-
+.pb-sm-0 {
+	@media (max-width: 1024px){
+		padding-bottom: 0 !important;
+	}
+}
 .pt-1 {
 	padding-top: 1em;
 }
