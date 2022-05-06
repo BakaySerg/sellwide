@@ -39,16 +39,19 @@
 			@media (max-width: 991px){
 				width: 100%;
 				left: 0;
-				background-size: 100%;
 			}
 			@media (max-width: 600px){
-				width: 140%;
-				left: -22%;
+				width: 120%;
+				height: 100%;
+				left: -10%;
 				transform: none;
 				top: auto;
 				bottom: 0;
 			}
 		}
+	}
+	&--mini {
+		overflow: hidden;
 	}
 	&--main {
 		min-height: 86vmin;

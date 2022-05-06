@@ -21,7 +21,9 @@ body {
 	position: relative;
 	width: 100%;
 	min-height: 50vh;
-	overflow: hidden;
+	&:not(&--ov-visible) {
+		overflow: hidden;
+	}
 	@media (min-width: 1930px){
 		max-width: 1940px;
 		margin-left: auto;

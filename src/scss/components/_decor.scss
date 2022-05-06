@@ -59,8 +59,18 @@
 	}
 	&--8::before {
 		background-image: url(../img/general/bg-8.svg);
-		bottom: 0%;
+		bottom: 0;
 		padding-bottom: 66%;
+	}
+	&--9 {
+		background-color: initial;
+		background-image: url(../img/general/bg-9.svg);
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size: 100% auto;
+		&::before {
+			content: none;
+		}
 	}
 	@media (max-width: 1100px){
 		&:before {
