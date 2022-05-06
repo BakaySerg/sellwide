@@ -72,16 +72,27 @@
 			line-height: 1.3;
 			margin-bottom: .8em;
 		}
-		.ask__list li {
+		.ask__list li{
 			padding-bottom: .1em;
 		}
+		.why__list-item {
+			padding-bottom: 1em;
+			@media (min-width: 992px){
+				&::before {
+					width: 2em;
+					height: 2em;
+					top: 0;
+				}
+			}
+		}
 		.link {
+			text-shadow: 0 0;
 			text-decoration: underline;
 			display: inline-block;
 		}
 	}
 }
-[id^=a-] {
+[id^=a-]:not(:first-child) {
 	padding-top: 1.8em;
 	@media (max-width: 600px){
 		padding-top: 1.2em;
