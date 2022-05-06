@@ -291,7 +291,7 @@
 		}
 	}
 	&__list {
-		li {
+		&>li {
 			padding-bottom: 1.2em;
 			padding-left: 2em;
 			position: relative;

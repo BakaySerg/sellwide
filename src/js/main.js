@@ -43,7 +43,7 @@
 			})
 		};
 
-		//close dialogs
+		//header - mobile
 		window.addEventListener('click', function(e) {
 			if (!e.target.closest(".header")) {
 				header.classList.remove("header--open");
@@ -59,6 +59,23 @@
 			const target = parent.nextElementSibling;
 			target.scrollIntoView({ behavior: "smooth", block: "start" });
 		});
+
+		const stickySidebar = document.getElementById("sidebar");
+		if (stickySidebar) {
+			const sidebarAnchors = [...stickySidebar.querySelectorAll("a")];
+			window.addEventListener('scroll', function() {
+				let winTop = window.scrollY;
+				sidebarAnchors?.forEach(link => {
+					let sec = document.querySelector(link.hash);
+						if (sec.offsetTop <= winTop - 20 && sec.offsetTop + sec.offsetHeight > winTop - 100) {
+							link.classList.add("active");
+						} else {
+							link.classList.remove("active");
+						}
+					});
+
+			});
+		};
 
 		/**
 			accordions
