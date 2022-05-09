@@ -51,6 +51,20 @@
 			}
 		});
 
+		subMenus?.forEach(item => {
+			item.addEventListener('mouseenter', e => {
+				item.classList.add('open');
+			});
+			item.addEventListener('click', e => {
+				if(e.target.classList.contains("sub-menu__trigger")) {
+					item.classList.add('open');
+				}
+			});
+			item.addEventListener('mouseleave', e => {
+				item.classList.remove('open');
+			});
+		});
+
 		// anhor
 		const btnScrollDown = document.getElementById("btn-scroll-down");
 		btnScrollDown?.addEventListener('click', function(e) {

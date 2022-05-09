@@ -6,7 +6,7 @@
 		background-image: var(--bg1x);
 		background-position: center;
 		background-repeat: no-repeat;
-		z-index: 1;
+		z-index: -1;
 		@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), (min-resolution: 192dpi) and (min-width: 1024px),(min-width: 2000px) {
 			background-image: var(--bg2x);
 		}
@@ -17,7 +17,7 @@
 	&--regular {
 		padding-top: 4em;
 		padding-bottom: 4em;
-		z-index: 2;
+		z-index: 1;
 		overflow: visible;
 		@media (max-width: 991px){
 			padding-bottom: 2em;
@@ -27,14 +27,15 @@
 			background-image: var(--bg);
 			width: 116%;
 			height: 130%;
-			left: -9%;
+			left: -10.1%;
 			top: 60%;
 			transform: translateY(-50%);
 			@media (max-width: 1440px){
 				width: 110%;
-				height: 110%;
+				height: 106%;
 				left: -5%;
-				top: 52%;
+				top: 59%;
+				background-size: contain;
 			}
 			@media (max-width: 991px){
 				width: 100%;
