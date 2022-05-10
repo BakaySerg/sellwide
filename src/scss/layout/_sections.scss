@@ -296,6 +296,7 @@
 		}
 	}
 	&__list {
+		flex-grow: 0.4;
 		&>li {
 			padding-bottom: 1.2em;
 			padding-left: 2em;
