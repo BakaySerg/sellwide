@@ -21,6 +21,11 @@
 		@media (min-width: 600px){
 			padding-top: 1em;
 		}
+		@media (min-width: 1200px){
+			&.grid--2 {
+				gap: 42px 4.4em;
+			}
+		}
 	}
 	&__icon {
 		display: block;

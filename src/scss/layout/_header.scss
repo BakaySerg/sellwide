@@ -87,11 +87,13 @@
 		pointer-events: none;
 		overflow: hidden;
 		position: absolute;
-		top: 100%;
+		top: 104%;
 		left: 0;
 		right: 0;
 		background-color: #fff;
+		opacity: 0;
 		&--open {
+			opacity: 1;
 			max-height: 600vh;
 			pointer-events: auto;
 			z-index: 99;
@@ -216,6 +218,16 @@
 			gap: 2em;
 			transition: .3s;
 			transform: translateY(-4px);
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 2em;
+				right: 3em;
+				width: 14em;
+				height: 4px;
+				background: url(../img/services/dot.svg) left repeat-x;
+				background-size: contain;
+			}
 			&::after {
 				content: '';
 				position: absolute;
@@ -286,6 +298,11 @@
 				&:hover {
 					color: $orange;
 				}
+			}
+			@media (max-width: 700px){
+				padding-top: 0.3em;
+				padding-bottom: 0.3em;
+				margin-bottom: 0.2em;
 			}
 		}
 		@media (max-width: 1023px) {
