@@ -54,16 +54,8 @@
 			gap: 0.6em;
 		}
 	}
-	&__link {
-		color: inherit;
-		padding: .5em .1em;
-		position: relative;
-		font-size: em(18);
-		z-index: 2;
-		&:hover {
-			color: $orange;
-		}
-		&.active {
+	&__item {
+		&.active >a, &.active .sub-menu__trigger{
 			@media (min-width: 1024px){
 				&:after {
 					content: '';
@@ -79,6 +71,17 @@
 					bottom: 3px;
 				}
 			}
+		}
+
+	}
+	&__link {
+		position: relative;
+		color: inherit;
+		padding: .5em .1em;
+		font-size: em(18);
+		z-index: 2;
+		&:hover {
+			color: $orange;
 		}
 	}
 	@media (max-width: 1023px) {
@@ -189,9 +192,14 @@
 //submenu
 .sub-menu {
 	user-select: none;
-	&> span {
+	&__trigger {
 		cursor: pointer;
 		position: relative;
+		display: block;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		@media (min-width: 1024px){
+			padding: 0.5em 0;
+		}
 		&:before {
 			content: '';
 			position: absolute;

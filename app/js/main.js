@@ -10,10 +10,10 @@
 			current = current.split('-')[0];
 		}
 		// console.log(current);
-		let menuItems = document.querySelectorAll('.menu__link');
+		let menuItems = document.querySelectorAll('.menu__item a');
 		for (let i = 0, len = menuItems.length; i < len; i++) {
 			if (menuItems[i].getAttribute("href").split('-')[0].indexOf(current) !== -1 && current.length > 3) {
-				menuItems[i].className += " active";
+				menuItems[i].closest(".menu__item").className += " active";
 				return
 			}
 		};
@@ -53,15 +53,15 @@
 
 		subMenus?.forEach(item => {
 			item.addEventListener('mouseenter', e => {
-				item.classList.add('open');
+				if ( window.matchMedia("(min-width: 1025px)").matches) item.classList.add('open');
+			});
+			item.addEventListener('mouseleave', e => {
+				if ( window.matchMedia("(min-width: 1025px)").matches) item.classList.remove('open');
 			});
 			item.addEventListener('click', e => {
 				if(e.target.classList.contains("sub-menu__trigger")) {
 					item.classList.add('open');
 				}
-			});
-			item.addEventListener('mouseleave', e => {
-				item.classList.remove('open');
 			});
 		});
 
