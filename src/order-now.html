@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sell Wide | Order Now</title>
+	@@include('./include/head.html')
+</head>
+
+<body>
+	@@include('./include/header.html')
+	<div class="wrapper">
+		@@include('./include/icon-sprite.html')
+		<!-- intro -->
+		<section class="s-intro s-intro--regular" style="--bg: url(../img/order-now/intro.svg);">
+			<div class="container container--lg intro__container intro__container--regular">
+				<em class="overtitle">Enterprise SEO</em>
+				<h1 class="h1">Order Now</h1>
+			</div>
+		</section>
+
+		<!--  -->
+		<section class="s--simply">
+			<div class="container">
+				<form action="#" class="form">
+					<div class="form__dual">
+						<div class="form__wrap">
+							<div class="form__placeholder">First Name *</div>
+							<input type="text" name="f-name" class="form__input" placeholder="John" minlength="2" required>
+						</div>
+						<div class="form__wrap">
+							<div class="form__placeholder">Last Name *</div>
+							<input type="text" name="l-name" class="form__input" placeholder="Doe" minlength="2" required>
+						</div>
+					</div>
+					<div class="form__dual">
+						<div class="form__wrap">
+							<div class="form__placeholder">Email *</div>
+							<input type="email" name="email" class="form__input" placeholder="john-doe@mail.com" minlength="2" required>
+						</div>
+						<div class="form__wrap">
+							<div class="form__placeholder">Phone *</div>
+							<input type="tel" name="phone" class="form__input" placeholder="+000 000 000"  pattern="[0-9]{5,14}" inputmode="numeric" required>
+						</div>
+					</div>
+					<div class="form__dual">
+						<div class="form__wrap">
+							<div class="form__placeholder">Card Number *</div>
+							<input type="text" name="card-num" class="form__input" placeholder="Cart Number *" minlength="6" data-mask="0000 0000 0000 0000" inputmode="numeric" required>
+						</div>
+						<div class="form__dual">
+							<div class="form__wrap">
+								<div class="form__placeholder">Month/Year *</div>
+								<input type="text" name="card-date" class="form__input" placeholder="00/00" minlength="2" data-mask="00 / 00" inputmode="decimal" required>
+							</div>
+							<div class="form__wrap">
+								<div class="form__placeholder">CVV2 / СVС2 *</div>
+								<input type="text" name="card-cvv" class="form__input" placeholder="000" data-mask="000" pattern="[0-9]*" inputmode="decimal" required>
+							</div>
+						</div>
+					</div>
+					<div class="form__cta pt-2">
+						<div class="captcha"><img src="img/contacts/captcha.jpg" alt="captcha"></div>
+						<button type="submit" class="btn btn--arr btn--blue">
+							Submit
+							<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-sm"/></svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+	</div><!-- /wrapper -->
+	@@include('./include/footer.html')
+	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script>
+		let elements = document.querySelectorAll("[data-mask]");
+		[...elements].forEach(element => {
+			let pattern = element.getAttribute('data-mask');
+			let maskOptions = {
+				mask: pattern,
+				min: element.getAttribute('minlength')
+			};
+			let mask = IMask(element, maskOptions);
+			// mask.on("complete", function () { console.log(mask.value) });
+		});
+	</script>
+</body>
+</html>
