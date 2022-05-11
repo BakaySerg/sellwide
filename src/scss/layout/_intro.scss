@@ -2,6 +2,7 @@
 	position: relative;
 	&:before {
 		content: '';
+		pointer-events: none;
 		position: absolute;
 		background-image: var(--bg1x);
 		background-position: center;

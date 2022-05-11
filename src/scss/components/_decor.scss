@@ -34,6 +34,18 @@
 		bottom: 0;
 		padding-bottom: 44%;
 	}
+	&--44 {
+		background-color: initial;
+		z-index: 1;
+		@media (min-width: 1400px){
+			padding-bottom: 12.6em;
+		}
+	}
+	&--44::before {
+		background-image: url(../img/general/bg-44.svg);
+		bottom: 0;
+		padding-bottom: 19%;
+	}
 	&--5::before {
 		background-image: url(../img/general/bg-5.svg);
 		bottom: 30%;
@@ -76,7 +88,7 @@
 		&:before {
 			bottom: 85%;
 		}
-		&--3::before,&--4::before {
+		&--3::before,&--4::before,&--44::before {
 			bottom: 0;
 		}
 		&--55::before {

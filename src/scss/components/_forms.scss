@@ -24,7 +24,7 @@
 		}
 	}
 	&__wrap {
-		flex: 1 1 50%;
+		flex: 1 0 50%;
 	}
 	&__placeholder {
 		margin-bottom: 0.8em;
@@ -113,10 +113,69 @@
 			gap: 1.7em;
 		}
 	}
+	&__secure {
+		display: flex;
+		align-items: center;
+		gap: .6em;
+		margin-bottom: 1em;
+		font-size: em(17);
+	}
 }
 .captcha {
 	opacity: .8;
 	@media (max-width: 600px){
-		margin-bottom: 1em;
+		margin-bottom: 1.2em;
+	}
+}
+
+.pay {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 2em;
+	max-width: 620px;
+	margin: 0 auto 3em;
+	@media (max-width: 991px){
+		padding-top: 1em;
+		gap: 1em;
+	}
+	@media (max-width: 500px){
+		gap: 0.6em;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		flex: 1 .2 50%;
+		gap: 0.8em;
+		color: inherit;
+		padding: 0.4em 1em;
+		border: 1px solid transparent;
+		@media (max-width: 500px){
+			gap: .5em;
+			padding: .3em .6em;
+		}
+		&--active {
+			border-color: $orange;
+		}
+		&:hover {
+			cursor: pointer;
+			background-color: $bg-muted-2;
+		}
+		.h4 {
+			margin-bottom: .1em;
+			line-height: 1;
+			@media (max-width: 500px){
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__logo {
+		flex-shrink: 0;
+		@media (max-width: 500px){
+			.icon--md{
+				width: 32px;
+				height: 32px;
+			}
+		}
 	}
 }

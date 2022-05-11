@@ -106,6 +106,9 @@
 			<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M22.667 16h-13.333"></path>
 			<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M17.333 21.333l5.333-5.333-5.333-5.333"></path>
 		</symbol>
+		<symbol id="i-lock" viewBox="0 0 64 64">
+			<path fill="currentColor" d="M47.999 26.667h-2.666v-8c0-4.763-2.542-9.165-6.667-11.547s-9.208-2.382-13.333 0c-4.125 2.382-6.667 6.783-6.667 11.547v8h-2.666c-1.414 0-2.771 0.562-3.771 1.562s-1.562 2.357-1.562 3.771v21.334c0 1.414 0.562 2.771 1.562 3.771s2.357 1.562 3.771 1.562h32c1.414 0 2.771-0.562 3.771-1.562s1.562-2.357 1.562-3.771v-21.334c0-1.414-0.562-2.771-1.562-3.771s-2.357-1.562-3.771-1.562h-0.001zM24 18.667c0-2.858 1.525-5.499 4-6.928s5.525-1.429 8 0 4 4.070 4 6.928v8h-16v-8zM31.999 48.001c-1.414 0-2.771-0.562-3.771-1.562s-1.562-2.357-1.562-3.771c0-1.414 0.562-2.771 1.562-3.771s2.357-1.562 3.771-1.562c1.414 0 2.771 0.562 3.771 1.562s1.562 2.357 1.562 3.771c0 1.415-0.562 2.771-1.562 3.771s-2.357 1.562-3.771 1.562z"></path>
+		</symbol>
 	</defs>
 </svg>
 		<!-- intro -->
@@ -117,8 +120,22 @@
 		</section>
 
 		<!--  -->
-		<section class="s--simply">
+		<section class="s--simply pt-0 s-decor-buildings s-decor-buildings--44">
 			<div class="container">
+				<div class="pay">
+					<a href="#" class="pay__item pay__item--active">
+						<div class="pay__logo">
+							<svg class="icon icon--md" viewBox="0 0 32 32"><use xlink:href="img/home/sprite.svg#i-cards"/></svg>
+						</div>
+						<h3 class="h4">Credit Card</h3>
+					</a>
+					<a href="#" class="pay__item">
+						<div class="pay__logo">
+							<svg class="icon icon--md" viewBox="0 0 32 32"><use xlink:href="img/home/sprite.svg#i-euro"/></svg>
+						</div>
+						<h3 class="h4">Sepa</h3>
+					</a>
+				</div>
 				<form action="#" class="form">
 					<div class="form__dual">
 						<div class="form__wrap">
@@ -158,10 +175,16 @@
 					</div>
 					<div class="form__cta pt-2">
 						<div class="captcha"><img src="img/contacts/captcha.jpg" alt="captcha"></div>
-						<button type="submit" class="btn btn--arr btn--blue">
-							Submit
-							<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-sm"/></svg>
-						</button>
+						<div>
+							<div class="form__secure">
+								<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-lock"/></svg>
+								<span>Connection secure</span>
+							</div>
+							<button type="submit" class="btn btn--arr btn--blue">
+								Submit
+								<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-sm"/></svg>
+							</button>
+						</div>
 					</div>
 				</form>
 			</div>

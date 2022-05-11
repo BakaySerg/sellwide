@@ -111,5 +111,17 @@
 <path fill="none" stroke="#2685c4" style="stroke: var(--color2, #2685c4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M21.333 21.333h18.667"></path>
 <path fill="none" stroke="#2685c4" style="stroke: var(--color2, #2685c4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M21.333 30.667h6.667"></path>
 </symbol>
+<symbol id="i-euro" viewBox="0 0 64 64">
+<path fill="none" stroke="#0d1e49" style="stroke: var(--color2, #0d1e49)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M48.971 15.029c9.373 9.373 9.373 24.569 0 33.941s-24.569 9.373-33.941 0c-9.373-9.373-9.373-24.569 0-33.941s24.569-9.373 33.941 0"></path>
+<path fill="none" stroke="#0d1e49" style="stroke: var(--color2, #0d1e49)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M41.43 41.43c-5.208 5.208-13.648 5.208-18.856 0s-5.208-13.648 0-18.856 13.648-5.208 18.856 0"></path>
+<path fill="none" stroke="#2685c4" style="stroke: var(--color1, #2685c4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M32 28.321h-16"></path>
+<path fill="none" stroke="#2685c4" style="stroke: var(--color1, #2685c4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M32 35.679h-16"></path>
+</symbol>
+<symbol id="i-cards" viewBox="0 0 64 64">
+<path fill="none" stroke="#2685c4" style="stroke: var(--color1, #2685c4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M17.333 32h40"></path>
+<path fill="none" stroke="#2685c4" style="stroke: var(--color1, #2685c4)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M32 42.667h-5.333"></path>
+<path fill="none" stroke="#0d1e49" style="stroke: var(--color2, #0d1e49)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M16 42.667h-2.667c-1.768 0-3.464-0.702-4.714-1.953s-1.953-2.946-1.953-4.714v-18.667c0-1.768 0.702-3.464 1.953-4.714s2.946-1.953 4.714-1.953h29.333c1.768 0 3.464 0.702 4.714 1.953s1.953 2.946 1.953 4.714v4"></path>
+<path fill="none" stroke="#0d1e49" style="stroke: var(--color2, #0d1e49)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M50.667 21.333h-26.667c-3.682 0-6.667 2.985-6.667 6.667v18.667c0 3.682 2.985 6.667 6.667 6.667h26.667c3.682 0 6.667-2.985 6.667-6.667v-18.667c0-3.682-2.985-6.667-6.667-6.667z"></path>
+</symbol>
 </defs>
 </svg>
