@@ -58,11 +58,11 @@
 				font-size: em(42);
 			}
 		}
-		.why__list-item {
-			padding-bottom: 1.2em;
-			&:before {
-				top: -.1em;
-			}
+	}
+	.why__list-item {
+		padding-bottom: 1.2em;
+		&:before {
+			top: -.1em;
 		}
 	}
 }
