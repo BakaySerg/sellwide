@@ -139,5 +139,12 @@
 			width: 16em;
 			height: 6.7em;
 		}
+		&--3::before {
+			bottom: 4%;
+			right: 4%;
+			background-image: url(../img/general/shapes-2.svg);
+			width: 16em;
+			height: 19em;
+		}
 	}
 }
