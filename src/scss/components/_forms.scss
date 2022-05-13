@@ -25,6 +25,9 @@
 	}
 	&__wrap {
 		flex: 1 0 49%;
+		.form__dual .form__dual &{
+			flex: 1 0 47%;
+		}
 	}
 	&__placeholder {
 		margin-bottom: 0.8em;
