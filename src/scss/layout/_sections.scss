@@ -213,6 +213,9 @@
 		align-self: flex-start;
 		@media (min-width: 992px){
 			max-width: 510px;
+			&--sm {
+				max-width: 470px;
+			}
 			&--1 {
 				max-width: 480px;
 			}
